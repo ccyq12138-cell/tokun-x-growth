@@ -1,0 +1,15 @@
+{
+  "name": "tokun-x-growth",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Master Codex skill and workflow contracts for Tokun X growth",
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate-repo.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
+

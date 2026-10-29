@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "policy": "Handles are case-insensitive. Exclude competitor official/founder accounts and every reply in their threads from interaction candidates.",
+  "accounts": [
+    {"handle":"fabrice_mayrand","category":"competitor_founder_research_only","evidence_url":"https://x.com/fabrice_mayrand","evidence_status":"user_directed_and_observed"},
+    {"handle":"CheaperInfer","category":"competitor_official","evidence_url":"https://x.com/CheaperInfer","evidence_status":"profile_observed"},
+    {"handle":"OpenRouter","category":"competitor_official","evidence_url":"https://x.com/OpenRouter","evidence_status":"profile_observed"},
+    {"handle":"ModelsOnOR","category":"competitor_official","evidence_url":"https://x.com/OpenRouter/status/2115564985606918186","evidence_status":"official_cross_reference_observed"}
+  ],
+  "pending_verification": ["Omniroute", "Keak_ai"]
+}
+

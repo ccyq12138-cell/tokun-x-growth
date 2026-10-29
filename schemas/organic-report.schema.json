@@ -1,0 +1,28 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"https://tokun.local/schemas/organic-report.schema.json",
+  "type":"object",
+  "required":["contract_version","run_id","run_date","account_verification","executed","candidates","competitor_research","topics","coverage_and_failures"],
+  "properties":{
+    "contract_version":{"const":"1.0.0"},
+    "run_id":{"type":"string","pattern":"^run_[a-z0-9_-]+$"},
+    "run_date":{"type":"string","format":"date"},
+    "account_verification":{
+      "type":"object",
+      "required":["expected_handle","actual_handle","verified","account_state"],
+      "properties":{
+        "expected_handle":{"type":"string"},
+        "actual_handle":{"type":["string","null"]},
+        "verified":{"type":"boolean"},
+        "account_state":{"enum":["healthy","restricted","unknown"]}
+      }
+    },
+    "executed":{"type":"array","items":{"type":"object","required":["action","status"],"properties":{"action":{"enum":["reply","comment_reply","original_post","quote","repost","like"]},"status":{"enum":["verified","skipped","failed","unknown"]},"result_url":{"type":["string","null"]}}}},
+    "candidates":{"type":"array","maxItems":5},
+    "competitor_research":{"type":"array","maxItems":3},
+    "topics":{"type":"array","maxItems":2},
+    "coverage_and_failures":{"type":"object"}
+  },
+  "additionalProperties":true
+}
+

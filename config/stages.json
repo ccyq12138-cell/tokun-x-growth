@@ -1,0 +1,14 @@
+{
+  "contract_version": "1.0.0",
+  "stages": [
+    {"stage_id":"stage-1","name":"Business goals","status":"configuration_only","executable":false,"dependencies":[]},
+    {"stage_id":"stage-2","name":"Competitor analysis","status":"configuration_only","executable":false,"dependencies":["stage-1"]},
+    {"stage_id":"stage-3","name":"Positioning and profile","status":"configuration_only","executable":false,"dependencies":["stage-1","stage-2"]},
+    {"stage_id":"stage-4","name":"Founder organic operations","status":"integrated_regression_passed_non_production","executable":true,"dependencies":["stage-1","stage-2","stage-3"],"tasks":["research","organic-decision","reporting","regression"]},
+    {"stage_id":"stage-5","name":"Ad intelligence","status":"contract_only","executable":false,"dependencies":["stage-4"]},
+    {"stage_id":"stage-6","name":"Creative production","status":"contract_only","executable":false,"dependencies":["stage-5"]},
+    {"stage_id":"stage-7","name":"Ads execution","status":"contract_only","executable":false,"dependencies":["stage-6"]},
+    {"stage_id":"stage-8","name":"Analytics and iteration","status":"contract_only","executable":false,"dependencies":["stage-4","stage-7"]}
+  ]
+}
+
