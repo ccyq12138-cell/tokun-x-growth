@@ -12,12 +12,16 @@ Tokun 的 X 增长工作流：从业务目标、竞品研究和账号定位，�
 | Stage 2 | [竞品研究](.agents/skills/tokun-stage2-competitor-research/SKILL.md) | 流程已编写，实跑未验证 |
 | Stage 3 | [账号定位与主页](.agents/skills/tokun-stage3-account-positioning/SKILL.md) | 流程已编写，实跑未验证 |
 | Stage 4 | [Organic 日常运营](.agents/skills/tokun-stage4-organic-operations/SKILL.md) | 流程已编写，实跑未验证 |
-| Stage 5 | [广告情报与 Angle](.agents/skills/tokun-stage5-ad-intelligence/SKILL.md) | 流程已编写，实跑未验证 |
+| Stage 5 | [广告情报与 Angle](.agents/skills/tokun-stage5-ad-intelligence/SKILL.md) | [详细设计完成](docs/stage5/design.md)，代码与实跑待实现 |
 | Stage 6 | [创意素材生产](.agents/skills/tokun-stage6-creative-production/SKILL.md) | 流程已编写，实跑未验证 |
 | Stage 7 | 广告执行 | 暂缓，未实现 |
 | Stage 8 | [数据复盘与学习](.agents/skills/tokun-stage8-analytics-learning/SKILL.md) | 流程已编写，实跑未验证 |
 
 Stage 1–3 用于首次规划与按需维护；Stage 4–6、8 支持增量复用。Stage 8 可分析已有历史投放数据，无需先实现 Stage 7。
+
+## Stage 5 详细设计
+
+[设计文档](docs/stage5/design.md)定义运行模式、来源适配、五个长期主库、去重与语义责任、六类Family、证据和风险审核、状态/版本、跨run配额、Stage6交接、失效传播及幂等提交。[30项验收场景](docs/stage5/acceptance.md)是后续实现标准，尚未执行业务测试。
 
 ## 使用方式
 

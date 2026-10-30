@@ -14,3 +14,7 @@
 | Stage7 | 待分配 | 批准卡及素材 | 本次不提供 | 当前用户明确暂缓 | 未验证 | false | 未运行 | false | 未核验 | not_implemented；后续独立任务 |
 
 文件检查不等于业务运行或回归通过。未注册每日调度、未创建Dashboard、未生成广告图片与正式导入工作簿。若后续获得原skill/实现、品牌ZIP、XLSX模板或平台权限，再核对并集成，不覆盖已冻结历史版本。
+
+## Stage5设计补充
+
+2026-10-30：完成[详细设计](stage5/design.md)、[30项验收计划](stage5/acceptance.md)、空交接模板及skill入口更新。此状态为design_complete；采集器、Schema验证器、决策引擎和持久化实现尚未编写，code_integrated=false，业务与回归未验证。设计提出Home入口未核验时保留研究草稿但阻断正式交接；这是明确记录的设计选择。

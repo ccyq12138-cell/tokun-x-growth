@@ -9,6 +9,14 @@ description: 将 X 与获准 Discord 痛点转换为有证据的 Tokun Angle、�
 
 每次记录负责人、输入引用、输出引用、依赖、执行状态、测试证据和下一步缺口。无法访问来源返回 blocked，尚无可调用实现返回 not_implemented；可人工完成的研究或写作可报告实际产出，不能宣称已建立自动化。固定样本测试不得触发真实互动、广告或付款。
 
+## 加载具体设计
+
+开始Stage5任务先读取[完整设计](../../../docs/stage5/design.md)及[验收矩阵](../../../docs/stage5/acceptance.md)，交接结构参照[空交接模板](references/handoff-template.json)。这些是设计契约，不是当前已可运行的采集器；不得声称自动化实现已验收。
+
+确定daily/review/revalidate/replay模式、输入快照、as_of和权限；按设计的去重→痛点聚类→证据匹配→Angle变更→门槛/审批→排序/配额→快照/交接执行。人工审阅的语义映射须保留理由；无法判定不静默自动归类。
+
+同日配额跨run累计；审核绑定Angle及证据版本；过期撤销制作资格不受新增配额限制。主库快照完整提交后才导出交接；Stage6消费时重复检查有效期、版本和decision_key。Home入口未核验可研究/草稿，正式交接标entry_unverified。
+
 ## 执行与交付
 
 输入：Stage4来源信号、历史Angle/去重索引、Home Ads入口证据、获准Discord上下文、最新Tokun官网/docs/负责人确认事实。
